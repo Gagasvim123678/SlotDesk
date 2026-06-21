@@ -18,7 +18,6 @@ export function SchedulerPage() {
     <main className="page">
       <PageHeader
         email={admin.session?.user.email}
-        mode={scheduler.mode}
         onAdminOpen={!admin.session ? () => setShowAdminLogin((value) => !value) : undefined}
         onSignOut={admin.session ? admin.signOut : undefined}
       />

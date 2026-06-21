@@ -106,7 +106,6 @@ export function useScheduler(accessToken?: string) {
   };
 
   return {
-    mode: appointmentRepository.mode,
     appointments,
     filteredAppointments,
     slots: visibleSlots,

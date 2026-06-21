@@ -55,8 +55,6 @@ const toSlot = (row: Record<string, unknown>): AppointmentSlot => ({
 });
 
 export const appointmentRepository = {
-  mode: "Supabase",
-
   async listSlots() {
     const rows = await publicSupabaseRest<Record<string, unknown>[]>(
       "appointment_slots?select=*&order=visit_date.asc,visit_time.asc",
